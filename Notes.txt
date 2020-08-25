@@ -1,0 +1,40 @@
+* input() obtains data from the keyboard.
+* if expr:
+    xxxx
+    xxxx
+  elif expr:
+    xxxx
+    xxxx
+  else:
+    xxxx
+  (SYNTAX FOR CONDITIONALS)
+* try:
+    xxxx
+    xxxx
+  except:
+    xxxx
+    xxxx
+  (SYNTAX FOR TRY/CATCH)
+* max() returns the biggest element in a list, min() returns the smallest.
+* len() returns the number of elements in the object.
+* x = int(x), x = float(x) convert the variable into the assigned type.
+* 'math' and 'random' need to be imported before used.
+* def functionName():
+    xxxx
+    xxxx
+  (SYNTAX TO DEFINE NEW FUNCTIONS)
+* Function definitions don't generate any output. Statements within them aren't executed until the function is called.
+* while expr:
+    xxxx
+    xxxx
+  (SYNTAX FOR INFINITE LOOPS)
+* for x in obj:
+    xxxx
+    xxxx
+  (SYNTAX FOR FINITE LOOPS)
+* 'continue' is used to end the current iteration without exiting the while loop. It proceeds with the next iteration.
+* word[i:j] retrieves the characters between i and j-1.
+* dir() can be used to list the available methods of an object.
+* strip() is used to remove the blank spaces at the beginning and the end of a string.
+* %d, %g, and %s can be used to format strings.
+ 'In %d I got a %g grade on %s.' % (2010,9.5,'math class')
