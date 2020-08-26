@@ -65,3 +65,12 @@
 * When a list is passed as argument to a function, the function gets a reference to the list. If the function modifies a list parameter, the caller
   of the function sees the change.
 * append() modifies a list, while the '+' operator creates a new list.
+* A dictionary is a more general type of list. Their indices can be almost of any type.
+* Dictionaries can be seen as mappings between a set of keys (indices) and a set of values.
+* Square brackets can be used to add items to a dictionary: dict[key]=value
+* The order of items in a dictionary is unpredictable. That's why keys are used to look for corresponding values.
+* On dictionaries, len() returns the number of key-value pairs.
+* The 'in' operator tells whether something appears as key in the dictionary.
+* To see whether something appears as a value, the values() method needs to be used. It returns an object that can be converted to list, and then the
+  'in' operator can be used again.
+* get(key,value) checks if the key appears in the dictionary. If it does, returns the corresponding value, otherwise returns the default value. 
