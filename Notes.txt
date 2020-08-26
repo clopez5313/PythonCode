@@ -38,3 +38,4 @@
 * strip() is used to remove the blank spaces at the beginning and the end of a string.
 * %d, %g, and %s can be used to format strings.
  'In %d I got a %g grade on %s.' % (2010,9.5,'math class')
+ * open(file location) is used to open a file. If it succeeds, a file handle is returned.
