@@ -35,7 +35,14 @@
 * 'continue' is used to end the current iteration without exiting the while loop. It proceeds with the next iteration.
 * word[i:j] retrieves the characters between i and j-1.
 * dir() can be used to list the available methods of an object.
-* strip() is used to remove the blank spaces at the beginning and the end of a string.
+* strip() is used to remove the blank spaces at the beginning and the end of a string. rstrip() removes the spaces on the right side of a string.
 * %d, %g, and %s can be used to format strings.
  'In %d I got a %g grade on %s.' % (2010,9.5,'math class')
- * open(file location) is used to open a file. If it succeeds, a file handle is returned.
+* open(file location) is used to open a file. If it succeeds, a file handle is returned.
+* If the size of the file is small enough, it can be read in one string using read().
+* find() looks for occurrences of a string within another string. Returns the position of the string or -1 if it wasn't found.
+* Protecting the open() call with a Try/Except is a good practice.
+* To write a file, it has to be opened like this: open(file location, w). If the file already exists, the contents will be deleted and replaced with
+  the new text.
+* write() puts the data in the file and returns the number of characters written.
+* close() needs to be used when writing files.
