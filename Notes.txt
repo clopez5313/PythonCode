@@ -46,3 +46,22 @@
   the new text.
 * write() puts the data in the file and returns the number of characters written.
 * close() needs to be used when writing files.
+* A list is a sequence of elements, which can be of any type. The list can have elements of many types.
+* Unlike strings, lists are mutable.
+* append() adds an element at the end of a list.
+* extend(list) takes a list as an argument and adds it at the end of the list that calls the method.
+* sort() arranges the elements in the list from high to low.
+* pop(index) can be used to delete elements in a list. It returns the removed element. If an index is not given, it deletes and returns the last
+  element of the list.
+* If the element is not needed, then del list[index] can be used instead.
+* remove(element) can be used if the element is known but not the index.
+* To remove more than one element at the same time, 'del' with a slice index can be used.
+* sum() only works on lists when the elements are numbers.
+* To convert from a string to a list (array) of characters, list(string) can be used.
+* split() is used to break a string into words. It can use an optional argument called delimiter that specifies which characters are used as words
+  boundaries.
+* join(list) takes a list of strings to concatenate the elements of that list.
+* 'is' can be used to determine if two variables refer to the same object.
+* When a list is passed as argument to a function, the function gets a reference to the list. If the function modifies a list parameter, the caller
+  of the function sees the change.
+* append() modifies a list, while the '+' operator creates a new list.
