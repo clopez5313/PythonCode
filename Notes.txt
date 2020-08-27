@@ -73,7 +73,7 @@
 * The 'in' operator tells whether something appears as key in the dictionary.
 * To see whether something appears as a value, the values() method needs to be used. It returns an object that can be converted to list, and then the
   'in' operator can be used again.
-* get(key,value) checks if the key appears in the dictionary. If it does, returns the corresponding value, otherwise returns the default value.
+* get(key, value) checks if the key appears in the dictionary. If it does, returns the corresponding value, otherwise returns the default value.
 * A tuple is a sequence of values. The values stored in a tuple can be of any type and they are indexed by integers. Tuples are immutable though.
 * Create a tuple with a single element: t = (element,)
 * Create an empty tuple: t = tuple()
@@ -81,3 +81,23 @@
 * Comparison on tuples: compares the elements of each sequence in ascending order until it finds elements that differ. Subsequent elements are not
   considered.
 * Dictionaries have a method called items() that return a list of tuples, where each tuple is a key-value pair.
+* To use the regular expressions library, 're' has to be imported.
+* The caret character (^) is used in regular expressions to match the beginning of a line.
+* The most common special character used in regular expressions is the period (.), which matches any character.
+* '*' is used to match zero or more characters in the search string. '+' is used to match one or more characters.
+* findall() can be used to extract all of the substrings that match a regular expression.
+* In the expression '\S+@\S+' we look for substrings that have at least one non-whitespace character, followed by an at-sign, followed by at least
+  one non-whitespace character. '\S+' matches as many non-whitespace characters as possible.
+* Square brackets ('[]') are used to indicate a set of multiple acceptable characters we are willing to consider matching.
+* When using findall(), parentheses indicate that while you want the whole expression to match, you only are interested in extracting a portion
+  of the substring that matches the regular expression.
+* Other special characters and character sequences in regular expressions:
+  '$' matches end of line
+  \s matches whitespace character
+  *? and +? use non-greedy mode to match the characters
+  '?' matches a character zero or one time
+  [^] when the caret is used in square brackets, it inverts the logic of the acceptable characters.
+  \b matches the empty string but only at the start or end of a word
+  \B matches the empty string but not at the start or end of a word
+  \d matches any decimal digit (equivalent of [0-9])
+  \D matches any non-digit character (equivalent to [^0-9])
