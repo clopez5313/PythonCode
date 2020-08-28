@@ -101,3 +101,12 @@
   \B matches the empty string but not at the start or end of a word
   \d matches any decimal digit (equivalent of [0-9])
   \D matches any non-digit character (equivalent to [^0-9])
+* A socket provides a two-way connection between two programs. You can both read and write to the same socket.
+* encode() converts strings into bytes, while decode() does the opposite.
+* Flow Control is pausing either the sending or the receiving application.
+* The 'urllib' library simplifies the process of sending and receiving data over HTTP. It treats a web page much like a file.
+* To avoid running out of memory when retrieving a file, the data is pulled in buffers and then written to the disk before retrieving the next one.
+* A non-greedy match tries to find the smallest possible matching string, while the greedy tries to find the largest.
+* There are many Python libraries that can help to parse HTML and extract data from the pages.
+* To install packages in Python, make sure that these tools are up to date:
+  python -m pip install --upgrade pip setuptools wheel
