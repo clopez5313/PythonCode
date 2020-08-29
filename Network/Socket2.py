@@ -1,5 +1,6 @@
 import socket
 # URL with lots of text: https://www.w3.org/Protocols/rfc2616/rfc2616.txt
+# Shorter URL: http://data.pr4e.org/romeo.txt
 
 url = input('Enter the URL - ')
 fullURL = url.split('/')
@@ -22,10 +23,18 @@ url = 'GET ' + url + ' HTTP/1.0\r\n\r\n'
 cmd = url.encode()
 mysock.send(cmd)
 
+counter = 0
+
 while True:
     data = mysock.recv(512)
-    if (len(data) < 1):
+    if len(data) < 1:
         break
-    print(data.decode(),end='')
+    counter += len(data)
+
+    if counter < 3000:
+        print(data.decode(),end='')
+
+print('\n')
+print('Total characters:',counter)
 
 mysock.close()

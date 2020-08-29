@@ -1,5 +1,6 @@
-import socket
+import urllib.request
 # URL with lots of text: https://www.w3.org/Protocols/rfc2616/rfc2616.txt
+# Shorter URL: http://data.pr4e.org/romeo.txt
 
 url = input('Enter the URL - ')
 fullURL = url.split('/')
@@ -10,22 +11,20 @@ except:
     print('The URL that you entered is not correctly formatted.')
     exit()
 
-mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
 try:
-    mysock.connect((host, 80))
+    handle = urllib.request.urlopen(url)
 except:
     print('The URL that you entered does not exist or is not available.')
     exit()
 
-url = 'GET ' + url + ' HTTP/1.0\r\n\r\n'
-cmd = url.encode()
-mysock.send(cmd)
+counter = 0
 
-while True:
-    data = mysock.recv(512)
-    if (len(data) < 1):
-        break
-    print(data.decode(),end='')
+for line in handle:
+    words = line.decode().strip()
+    counter += len(words)
 
-mysock.close()
+    if counter < 3000:
+        print(words)
+
+print('\n')
+print('Total characters:',counter)
