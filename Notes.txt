@@ -110,3 +110,5 @@
 * There are many Python libraries that can help to parse HTML and extract data from the pages.
 * To install packages in Python, make sure that these tools are up to date:
   python -m pip install --upgrade pip setuptools wheel
+* Two common formats are used when exchanging data across the web: XML and JSON.
+* XML is best suited to exchange document-style data, while JSON works better with dictionaries, lists or other type of internal information.
