@@ -112,3 +112,6 @@
   python -m pip install --upgrade pip setuptools wheel
 * Two common formats are used when exchanging data across the web: XML and JSON.
 * XML is best suited to exchange document-style data, while JSON works better with dictionaries, lists or other type of internal information.
+* When we use an API, usually one program makes a set of services available for use by other applications and publishes the APIs (rules, contract)
+  that must be followed to access the provided services.
+* A SOA (Service-oriented architecture) approach is one where our overall application makes use of the services of other applications.
