@@ -115,3 +115,6 @@
 * When we use an API, usually one program makes a set of services available for use by other applications and publishes the APIs (rules, contract)
   that must be followed to access the provided services.
 * A SOA (Service-oriented architecture) approach is one where our overall application makes use of the services of other applications.
+* When building objects, 'class' is used to define the data and code that will make up each of the objects.
+* 'class' does not create objects but it rather defines a template indicating what data and code will be contained in each object.
+* '__init__' and '__del__' are used if the objects need to be aware about Construction and Destruction times.
